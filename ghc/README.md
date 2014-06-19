@@ -1,3 +1,4 @@
-This image extends `fedora:20` with Haskell ghc development packages.
+This docker image extends the `fedora` image with the Haskell ghc compiler,
+most of Haskell Platform and other important libraries and tools.
 
-It includes all of ghc-7.6.3, cabal-install, and some key libraries.
+It includes ghc-7.6.3, cabal-install-1.16, and various key libraries.

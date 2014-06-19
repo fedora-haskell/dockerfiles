@@ -1,9 +1,33 @@
 FROM fedora:latest
 MAINTAINER Jens Petersen <petersen@fedoraproject.org>
-# Haskell tools
-RUN yum -y install ghc cabal-install cabal-rpm cabal-dev
-# libs with more than 30 revdeps
-RUN yum -y install\
+# Haskell tools and libs with more than 10 fedora revdeps
+RUN yum -y install ghc cabal-install cabal-rpm cabal-dev\
+ hscolour ghc-rpm-macros hlint\
+ ghc-QuickCheck-devel\
+ ghc-cereal-devel\
+ ghc-hslogger-devel\
+ ghc-enumerator-devel\
+ ghc-HUnit-devel\
+ ghc-regex-compat-devel\
+ ghc-aeson-devel\
+ ghc-conduit-devel\
+ ghc-data-default-devel\
+ ghc-resourcet-devel\
+ ghc-extensible-exceptions-devel\
+ ghc-lifted-base-devel\
+ ghc-regex-posix-devel\
+ ghc-mmorph-devel\
+ ghc-void-devel\
+ ghc-monad-control-devel\
+ ghc-semigroups-devel\
+ ghc-transformers-base-devel\
+ ghc-base-unicode-symbols-devel\
+ ghc-regex-base-devel\
+ ghc-zlib-devel\
+ ghc-attoparsec-devel\
+ ghc-dlist-devel\
+ ghc-vector-devel\
+ ghc-primitive-devel
  ghc-unordered-containers-devel\
  ghc-random-devel\
  ghc-syb-devel\
