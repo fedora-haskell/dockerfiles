@@ -1,4 +1,4 @@
-FROM fedora:f27
+FROM fedora:27
 MAINTAINER Jens Petersen <petersen@fedoraproject.org>
 # Haskell ghc, cabal, stack
 
